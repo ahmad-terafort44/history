@@ -1,0 +1,33 @@
+.navBar{
+    width: 100%;
+    background: black;
+    display: flex;
+    position: sticky;
+    top: 0;
+    left: 0;
+    align-items: center;
+    justify-content: space-between;
+
+    button{
+        margin: 1vw 0px;
+        width: 40%;
+        font-size: 0.8vw;
+        font-weight: bold;
+        background: transparent;
+        color: white;
+        border: none;
+        border-radius: 1vw;
+        padding: 1% 5%;
+
+        &:hover{
+            border-bottom: 2px solid cyan;
+            transition: 0.5s;
+            color: cyan;
+            cursor: pointer;
+        }
+    }
+    .activeTab{
+        border-bottom: 2px solid cyan;
+        color: cyan;
+    }
+}

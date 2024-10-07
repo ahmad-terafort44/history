@@ -1,0 +1,64 @@
+.table{
+    width: 100%;
+    height: 100%;
+    table{
+        text-align: center;
+
+        thead{
+            background: gray;
+            color: white;
+        }
+        tbody{
+            tr{
+                td{
+                    padding: 0.2vw;
+                    border: 1px solid black;
+                }
+            }
+        }
+    }
+
+    .pagination{
+        position: sticky;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 2vw;
+        p{
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+
+            &:hover{
+                color: cyan;
+            }
+        }
+
+        .currentPage{
+            color: cyan;
+        }
+        button{
+            cursor: pointer;
+            background: transparent;
+            color: white;
+            margin: 0.5vw 0px;
+            padding: 0.5% 2%;
+            font-size: 0.9vw;
+            font-weight: bold;
+            border-radius: 0.5vw;
+
+            &:hover{
+                transition: 0.5s;
+                box-shadow: 0 0 40px cyan;
+                color: black;
+                background:cyan;
+                border: 1px solid cyan;
+            }
+        }
+
+    }
+}
